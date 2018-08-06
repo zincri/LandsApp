@@ -155,6 +155,22 @@
                 this.Email,
                 this.Password);
 
+            /******************************TEMPORAL**********************************/
+            if(this.Email != "zincri_mlz@hotmail.com" && this.Password!="123456")
+            {
+                IsRunning = false;
+                IsEnable = true;
+                await App.Current.MainPage.DisplayAlert(
+                Languages.Error,
+                Languages.SomethingWrong,
+                Languages.Ok);
+                this.Password = string.Empty;
+                return;
+                
+            }
+            /******************************TEMPORAL**********************************/
+
+            /*
             if (token == null)
             {
                 IsRunning = false;
@@ -177,7 +193,7 @@
                 Languages.Ok);
                 this.Password = string.Empty;
                 return;
-            }
+            }*/
 
             var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Token = token;
