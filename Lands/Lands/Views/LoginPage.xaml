@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:Lands.Helpers"
+             x:Class="Lands.Views.LoginPage"
+             BindingContext= "{Binding Main, Source={StaticResource Locator}}"
+             Title="{i18n:Translate LoginTitle}"
+             BackgroundImage="fondo">
+    <ContentPage.Content>
+        <ScrollView
+            BindingContext="{Binding Login}">
+            <StackLayout
+                Padding="20">
+
+                <Image
+                    Source="world"
+                    WidthRequest="200"></Image>
+                <!--<Grid-->
+                <StackLayout
+                    Margin="40,20"
+                    VerticalOptions="CenterAndExpand">
+
+
+                   <Frame
+                        HasShadow="false"
+                        OutlineColor="#37d472"
+                        BackgroundColor="Transparent"
+                        HeightRequest="44"
+                        CornerRadius="22"
+                        Padding="15,0,0,0"
+                        >
+                    <Entry
+                        PlaceholderColor="White"
+                        HeightRequest="50"
+                        BackgroundColor="Transparent"
+                        Keyboard="Email"
+                        TextColor="White"
+                        Placeholder="{i18n:Translate EmailPlaceHolder}"
+                        Text="{Binding Email, Mode=TwoWay}"
+                        VerticalOptions="Center"></Entry>
+                    </Frame>
+
+                    <Frame
+                        Margin="0,10,0,0"
+                        HasShadow="false"
+                        OutlineColor="#37d472"
+                        BackgroundColor="Transparent"
+                        HeightRequest="44"
+                        CornerRadius="22"
+                        Padding="15,0,0,0"
+                        >
+                    <Entry 
+                        PlaceholderColor="White"
+                        HeightRequest="50"
+                        BackgroundColor="Transparent"
+                        IsPassword="true"
+                        TextColor="White"
+                        Placeholder="{i18n:Translate PasswordPlaceHolder}"
+                        Text="{Binding Password, Mode=TwoWay}"
+                        VerticalOptions="Center"></Entry>
+                    </Frame>
+                <!--</Grid>-->
+                </StackLayout>
+                <ActivityIndicator
+                    Margin="0,5"
+                    VerticalOptions="CenterAndExpand"
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}">
+
+                </ActivityIndicator>
+                <StackLayout
+                    Orientation="Vertical"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Switch
+                        IsToggled="{Binding IsRemembered,Mode=TwoWay}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                    <Label
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="{i18n:Translate Rememberme}"
+                        TextColor="White"/>
+                    
+                    
+                </StackLayout>
+                <Label
+                    HorizontalOptions="Center"
+                    Text="{i18n:Translate ForgotPassword}"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand"/>
+
+                <StackLayout
+                    Padding="40,10"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand">
+                    <Button
+                        
+                        BackgroundColor="#37d472"
+                        BorderRadius="20"
+                        Command="{Binding LoginCommand}"
+                        HeightRequest="40"
+                        HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnable}"
+                        Text="{i18n:Translate Login}"
+                        TextColor="White"></Button>
+                    <Button
+                        
+                        BackgroundColor="#f1162f"
+                        BorderRadius="20"
+                        HeightRequest="40"
+                        HorizontalOptions="FillAndExpand"
+                        Text="{i18n:Translate Register}"
+                        TextColor="White"></Button>
+                </StackLayout>
+                <StackLayout
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
+                    <Image Source="facebook"
+                           WidthRequest="50"/>
+                    <Image Source="twitter"
+                           Margin="40,0"
+                           WidthRequest="50"/>
+                    <Image Source="instagram"
+                           WidthRequest="50"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,18 +1,20 @@
-using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Lands
 {
+
 	public partial class App : Application
 	{
 		public App ()
 		{
-			InitializeComponent();
-
-			MainPage = new MainPage();
-		}
+            InitializeComponent();
+            NavigationPage objeto = new NavigationPage(new Views.LoginPage());
+            //objeto.BarBackgroundColor=Color.FromHex("#DE31AA");
+            objeto.BarBackgroundColor = Color.FromHex("#004475");
+            objeto.BarTextColor = Color.FromHex("#37d472");
+            MainPage = objeto;
+        }
 
 		protected override void OnStart ()
 		{
