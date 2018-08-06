@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="MvvmLight" Version="5.4.1" />
-    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="SkiaSharp" Version="1.60.2" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />

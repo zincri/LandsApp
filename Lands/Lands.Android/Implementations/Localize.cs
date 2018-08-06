@@ -1,10 +1,13 @@
-﻿[assembly: Xamarin.Forms.Dependency(typeof(Lands.Droid.Implementations.Localize))]
+﻿using Lands.Helpers;
+using Lands.Interfaces;
+using System.Globalization;
+using System.Threading;
+
+
+[assembly: Xamarin.Forms.Dependency(typeof(Lands.Droid.Implementations.Localize))]
 namespace Lands.Droid.Implementations
 {
-    using System.Globalization;
-    using System.Threading;
-    using Helpers;
-    using Interfaces;
+    
 
     public class Localize : ILocalize
     {

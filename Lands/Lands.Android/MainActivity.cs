@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using FFImageLoading.Forms.Droid;
+using FFImageLoading.Forms.Platform;
 
 namespace Lands.Droid
 {
