@@ -36,4 +36,8 @@
   <ItemGroup>
     <Folder Include="Views\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lands.Domain\Lands.Domain.csproj" />
+  </ItemGroup>
 </Project>
