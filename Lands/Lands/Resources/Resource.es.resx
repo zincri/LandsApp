@@ -213,4 +213,7 @@
   <data name="Translations" xml:space="preserve">
     <value>Traducciones</value>
   </data>
+  <data name="MenuTitle" xml:space="preserve">
+    <value>Menu</value>
+  </data>
 </root>

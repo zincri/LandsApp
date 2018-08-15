@@ -223,6 +223,15 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Menu.
+        /// </summary>
+        public static string MenuTitle {
+            get {
+                return ResourceManager.GetString("MenuTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Languages.
         /// </summary>
         public static string MyLanguages {

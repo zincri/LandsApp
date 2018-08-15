@@ -94,6 +94,11 @@
             get { return Resource.Information; }
         }
 
+        public static string MenuTitle
+        {
+            get { return Resource.MenuTitle; }
+        }
+
         //*************************************************************
         public static string Capital
         {
