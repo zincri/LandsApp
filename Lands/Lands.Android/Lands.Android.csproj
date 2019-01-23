@@ -115,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lands\Lands.csproj">
-      <Project>{79849860-7FD8-4150-8A61-DC9797E051AC}</Project>
+      <Project>{A512C6F4-FDED-4C8D-A738-EC49526F3346}</Project>
       <Name>Lands</Name>
     </ProjectReference>
   </ItemGroup>
