@@ -12,6 +12,7 @@ namespace Lands
 		public MainPage()
 		{
 			InitializeComponent();
+			
 		}
 	}
 }
